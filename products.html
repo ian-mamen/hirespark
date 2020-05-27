@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
       <link href="css/product.css" rel="stylesheet" type="text/css">
@@ -17,7 +18,7 @@
   <!-- Menu Icons -->
 <div class="container">
  <div class="jumbotron" id="word">
-<p>With Hirespark,we aim to provide high quality equipment to cater for your needs.<br> We also specialise in hiring out equipment for a specific time period to ensure you get the most out of our products.<br> Our different arrayof products include;</p>
+<p style="color:red;" >With Hirespark,we aim to provide high quality equipment to cater for your needs.<br> We also specialise in hiring out equipment for a specific time period to ensure you get the most out of our products.<br> Our different arrayof products include;</p>
  </div>
 <div class="row">
  <div class="col-sm-4">
@@ -36,7 +37,7 @@
      <div class="card" style="width: 18rem;">
        <img src="img/products/bulldozer.jpg" class="card-img-top" alt="An image of a bulldozer">
          <div class="card-body">
-          <h5 class="bg-success card-title">Bulldozer</h5>
+          <h5 class="bg-success card-title">Bulldozers</h5>
            <p class="card-text">Our array of bulldozers to push the dirt and debree.</p>
          </div>
            <h4 class="bg-primary title">4,000 per day</h4>
@@ -47,8 +48,8 @@
   <div class="card" style="width: 18rem;">
     <img src="img/products/roller.jpg" class="card-img-top" alt="An image of a roller">
       <div class="card-body">
-        <h5 class="bg-success card-title">Roller</h5>
-         <p class="card-text">Our high quality and effecient rollers ensure yourland is flattened in no time</p>
+        <h5 class="bg-success card-title">Rollers</h5>
+         <p class="card-text">Our high quality and effecient rollers ensure your land is flattened in no time</p>
        </div>
          <h4 class="bg-primary title">4,000 per day</h4>
 
@@ -57,14 +58,19 @@
      <!-- End of Menu section -->
      <!--Input details-->
         <div class="container-fluid" id="contact">
-        <div class="row">
+           <div class="row">
 <form action="/action_page.php" target="_self">
-<label for="fname">First name:</label><br>
+  <fieldset>
+    <legend>Personal:</legend>
+
+<label for="fname" required>First name:</label><br>
 <input type="text" id="fname" name="fname"><br>
-<label for="lname">Last name:</label><br>
+<label for="lname" required>Last name:</label><br>
 <input type="text" id="lname" name="lname"><br>
-</div>
-</div>
+
+</fieldset>
+        </div>
+         </div>
 
 <!-- Select Equipment -->
   <div class="form-group">
@@ -78,9 +84,12 @@
                  </div>
        <!-- Duration-->
        <label for="duration" class="lables"><b>Duration</b></label>
-                     <input id="duration" class="product-duration form-control" name="product_duration" value="0">
+                     <input id="duration" type="number" class="product-duration form-control" name="product_duration" value="0">
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit"><br><br>
+
+        <!-- link for home button -->
+        <a href="index.html">Home Page</a>
 
 
 
