@@ -32,12 +32,15 @@ $(document).ready(function (e) {
     
         //Create user
         var userCustomer = new customer(firstName, lastName, email, password, postalAddress, county, city, optEmail);
-        console.log(userCustomer);
+        
+        //Create customer string for rental only
+        customerString = "Name: " + firstName + ", " + lastName;
+        console.log(customerString);
 
         //Push customer to customers array
-        customers.push(userCustomer);
-
+        customers.push(customerString);
         //Debug - print customers array
+        console.log(customers);
     });
 
 });
